@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estudio PHI Viewer</title>
+
+    <link rel="stylesheet" href="css/viewer.css">
+    <link rel="stylesheet" href="css/tree.css">
+    <link rel="stylesheet" href="css/pdf.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Barra superior -->
+
+        <header>
+
+            <div class="logo">
+
+                Estudio PHI
+
+            </div>
+
+            <div class="projectName">
+
+                Refacciones Casa Mariano
+
+            </div>
+
+
+        </header>
+
+
+        <!-- Área principal -->
+
+        <div class="content">
+
+
+            <!-- Árbol -->
+
+            <aside>
+
+                <div id="tree">
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- Centro -->
+
+            <section>
+
+
+                <div class="viewer">
+
+                    <div class="pdf-toolbar">
+
+                        <div class="toolbar-group">
+
+                            <button id="zoomOut" title="Alejar">−</button>
+
+                            <span id="zoomValue">100%</span>
+
+                            <button id="zoomIn" title="Acercar">+</button>
+
+                        </div>
+
+                        <div class="separator"></div>
+
+                        <div class="toolbar-group">
+
+                            <button onclick="ajustarPDF()">Ajuste</button>
+
+                        </div>
+
+                        <div class="separator"></div>
+
+                        <div class="toolbar-group">
+
+                            <button id="prevPage">◀</button>
+
+                            <span id="pageInfo">1 / 1</span>
+
+                            <button id="nextPage">▶</button>
+
+                            <button id="fullscreenPdf">⛶</button>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="pdfContainer">
+
+                        <div id="pdfViewer"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="lib/pdfjs/pdf.js"></script>
+
+    <script src="js/pdf.js"></script>
+    <script src="js/tree.js"></script>
+    <script src="js/viewer.js"></script>
+
+</body>
+
+</html>
